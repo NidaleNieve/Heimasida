@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daníel Snær R.</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome fyrir icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <button id="lang-switch" class="language-btn"><img src="assets/Flag_of_the_United_Kingdom.svg" alt="UK Flag">English</button>
+
+    <!-- Intro -->
+    <header class="intro">
+        <div class="intro-content">
+            <div class="profile-picture">
+                <img src="assets/Mynd.jpeg" alt="Daníel Snær R">
+            </div>
+            <h1>Daníel Snær Rodríguez</h1>
+            <h4 class="subtitle" data-translate="subtitle">Gagnagrunns- og hugbúnaðarforritari</h4>
+            <p class="intro-text" data-translate="intro">
+                Ég er vinnusamur og duglegur maður með mikinn áhuga á tölvum. Ég er mjög fróðleiksfús, ábyrgur, lausnamiðaður og vinn sjálfstætt.
+                <br>Hér má finna yfirlit yfir verkefnin mín og leiðir til að hafa samband.
+            </p>
+            <div class="social">
+                <a href="https://github.com/nidalenieve" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dan%C3%ADel-sn%C3%A6r-rodr%C3%ADguez-366497392/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:daniel@danielsnaer.org" class="social-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-icon">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!--about -->
+    <section>
+        <h2 class="section-title" data-translate="about_title">Um mig</h2>
+        <div class="about-card">
+            <p data-translate="about">
+                Ég hef unnið að ýmsum vefverkefnum, allt frá leikjum skrifuðum í JavaScript
+                yfir í fullstack vefforrit. Mér finnst gaman að búa til hluti sem virka vel......
+                <p data-translate="about_2">
+                    Ég er alltaf að læra nýja hluti og leita að áhugaverðum verkefnum.
+                </p>
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2 class="section-title" data-translate="projects_title">Verkefni</h2>
+        <div class="projects-grid">
+
+            <a href="https://web-nueva.hola.is" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-icon">
+                    <img src="https://web-nueva.hola.is/wp-content/uploads/2025/12/cropped-hola-logo-negro-junto-1-300x257.png" alt="Hola" class="icon-zoom">
+                </div>
+                <div class="project-info">
+                    <h3>Hola</h3>
+                    <p data-translate="hola">Félag spænskumælandi á Íslandi — Bjó til nýja vefsíðu fyrir Hola með Wordpress.</p>
+                </div>
+                <span class="project-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="https://gastroswipe.app" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-icon">
+                    <img src="https://www.gastroswipe.app/_next/image?url=%2Flogo_720.png&w=128&q=75" alt="GastroSwipe">
+                </div>
+                <div class="project-info">
+                    <h3>GastroSwipe</h3>
+                    <p data-translate="gastroswipe">
+                        Finndu veitingastaði með vinum á auðveldan hátt! Full Stack vefforit byggt með Supabase og Next.js.
+                        <br>Vefforritun II — Lokaverkefni.
+                    </p>
+                </div>
+                <span class="project-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="https://veff1.danielsnaer.org" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-icon">
+                    <img src="assets/veff1-logo.png" alt="Vefforritun I">
+                </div>
+                <div class="project-info">
+                    <h3 data-translate="veff1_title">Hátíðir á Íslandi</h3>
+                    <p data-translate="veff1">Finndu hátíðir á Íslandi nálægt þér. Byggt með Javascript og JSON gagnagrunn.
+                        <br>Vefforritun I — Lokaverkefni
+                    </p>
+                </div>
+                <span class="project-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="https://pacman.danielsnaer.org" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/808/808439.png" alt="Pac-Man">
+                </div>
+                <div class="project-info">
+                    <h3>Javascript Pac-Man</h3>
+                    <p data-translate="pacman">Vefforitun I — Pac-Man leikur skrifaður í JavaScript.</p>
+                </div>
+                <span class="project-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="https://vefh3.danielsnaer.org" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-icon">
+                    <img src="assets/flask-logo.svg" alt="Vefhönnun III">
+                </div>
+                <div class="project-info">
+                    <h3>Vefhönnun III</h3>
+                    <p data-translate="vefh3">Lokaverkefni — API-drifin kvikmyndasíða smíðuð með Flask.</p>
+                </div>
+                <span class="project-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="https://vefh2.danielsnaer.org" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-icon">
+                    <img src="https://vefh2.danielsnaer.org/photos/logo.svg" alt="Vefhönnun II" class="icon-zoom">
+                </div>
+                <div class="project-info">
+                    <h3>Vefhönnun II</h3>
+                    <p data-translate="vefh2">Lokaverkefni — Nýsköpunarráðestefnan.</p>
+                </div>
+                <span class="project-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2 class="section-title" data-translate="contact_title">Hafa samband</h2>
+        <p data-translate="contact_text">Viltu vinna saman eða bara heilsað mér? Sendu mér póst!</p>
+        <a href="mailto:daniel@danielsnaer.org" class="contact-btn">
+            <i class="fas fa-paper-plane"></i> Senda tölvupóst
+        </a>
+    </section>
+
+    <footer>
+        <p>Daníel Snær Rodríguez 2026</p>
+    </footer>
+</body>
+</html>
