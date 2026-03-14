@@ -73,10 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set upp Vanilla Tilt fyrir öll cards sem nota það
     // Profile picture
-    VanillaTilt.init(document.querySelectorAll(".profile-image-wrapper"), {
-        scale: 1.04,
-        perspective: 800,
-        max: 8,
+    VanillaTilt.init(document.querySelectorAll(".profile-picture"), {
+        scale: 1.02,
+        perspective: 400,
+        max: 4,
         speed: 2000,
         glare: true,
         "max-glare": 0.15,

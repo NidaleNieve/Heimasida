@@ -106,7 +106,6 @@ Section.visible {
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     margin-bottom: 28px;
     overflow: hidden;
-    transform-style: preserve-3d;
     /* Bæti við padding til að láta wrapperinn líta út eins og hann sé með jafn langar hliðar
     padding-left: 1px;
     padding-right: 1px;
@@ -179,7 +178,6 @@ Section.visible {
     border-radius: 16px;
     padding: 36px 32px;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
-    transform-style: preserve-3d;
     transition: box-shadow 0.3s ease;
 }
 .about-card:hover {
@@ -210,7 +208,6 @@ Section.visible {
     color: #1a1a1a;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    transform-style: preserve-3d;
 }
 .project-card:hover {
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
@@ -295,7 +292,6 @@ Section.visible {
     cursor: pointer;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-style: preserve-3d;
 }
 .contact-btn:hover {
     transform: translateY(-2px) scale(1.02);
