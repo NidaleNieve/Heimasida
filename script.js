@@ -5,7 +5,7 @@ const translations = {
         intro: "I am a hardworking and diligent person with a strong interest in computers. I am very curious, responsible, solution-oriented, and work well independently.<br>Here you can find an overview of my projects and ways to get in touch.",
         about_title: "About me",
         about: 'I have worked on various web projects, ranging from games written in JavaScript to full-stack web applications. I enjoy creating things that work well...',
-        about_2: "I am always learning new things and looking for interesting projects.",
+        about_2: "I am always learning new things and looking for interesting projects. Please contact me if you are interested in working together.",
         projects_title: "Web Projects",
         hola: "Association of Spanish speakers in Iceland — Created a new website for Hola with Wordpress.",
         gastroswipe: "Easily find restaurants with friends! Full Stack web-app built with Supabase and Next.js. <br>Web Programming II — Final Project.",
@@ -27,7 +27,7 @@ function switchLanguage() {
     //easy switch
     currentLang = currentLang === "is" ? "en" : "is";
     //skiptir um texta á takkanum
-    document.getElementById("lang-switch").innerHTML = currentLang === "is" ? '<img src="assets/Flag_of_the_United_Kingdom.svg" alt="UK Flag">English</button>' : '<img src="assets/Flag_of_Iceland.svg" alt="Icelandic Flag">Íslenska</button>';
+    document.getElementById("lang-switch").innerHTML = currentLang === "is" ? '<img src="assets/Flag_of_the_United_Kingdom.svg" alt="UK Flag">English' : '<img src="assets/Flag_of_Iceland.svg" alt="Icelandic Flag">Íslenska';
     
     //skiptir um texta í öllum elementum með data-translate attributinu
     document.querySelectorAll("[data-translate]").forEach(element => {
@@ -72,37 +72,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Set upp Vanilla Tilt fyrir öll cards sem nota það
-    // Profile picture
-    VanillaTilt.init(document.querySelectorAll(".profile-picture"), {
-        scale: 1.02,
-        perspective: 400,
-        max: 4,
-        speed: 2000,
-        glare: true,
-        "max-glare": 0.15,
-    });
+    if (window.VanillaTilt) {
+        // Profile picture
+        VanillaTilt.init(document.querySelectorAll(".profile-picture"), {
+            scale: 1.02,
+            perspective: 400,
+            max: 4,
+            speed: 2000,
+            glare: true,
+            "max-glare": 0.15,
+        });
 
-    // About card
-    VanillaTilt.init(document.querySelectorAll(".about-card"), {
-        scale: 1.008,
-        perspective: 1200,
-        max: 3,
-        speed: 4000,
-        glare: true,
-        "max-glare": 0.1,
-    });
+        // About card
+        VanillaTilt.init(document.querySelectorAll(".about-card"), {
+            scale: 1.008,
+            perspective: 1200,
+            max: 3,
+            speed: 4000,
+            glare: true,
+            "max-glare": 0.1,
+        });
 
-    //Project cards
-    VanillaTilt.init(document.querySelectorAll(".project-card"), {
-        scale: 1.015,
-        perspective: 1000,
-        max: 4,
-        speed: 3000,
-        glare: true,
-        "max-glare": 0.18,
-    });
+        //Project cards
+        VanillaTilt.init(document.querySelectorAll(".project-card"), {
+            scale: 1.015,
+            perspective: 1000,
+            max: 4,
+            speed: 3000,
+            glare: true,
+            "max-glare": 0.18,
+        });
+    }
 
     //Stilli upp observer fyrir öll section elements
-    const sections = document.querySelectorAll("Section");
+    const sections = document.querySelectorAll("section");
     sections.forEach((section) => scrolled.observe(section));
 });
