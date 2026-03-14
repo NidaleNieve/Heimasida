@@ -26,6 +26,10 @@ let currentLang = "is";
 function switchLanguage() {
     //easy switch
     currentLang = currentLang === "is" ? "en" : "is";
+
+    // Geymi valda tungumálið í LocalStorage
+    localStorage.setItem("lang", currentLang);
+
     //skiptir um texta á takkanum
     document.getElementById("lang-switch").innerHTML = currentLang === "is" ? '<img src="assets/Flag_of_the_United_Kingdom.svg" alt="UK Flag">English' : '<img src="assets/Flag_of_Iceland.svg" alt="Icelandic Flag">Íslenska';
     
@@ -64,6 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
             translations.is[key] = element.innerHTML.trim();
         }
     });
+
+    // Ef að að enska er geymt í localStorage þá skipti ég yfir í það.
+    if (localStorage.getItem("lang") === "en") {
+        switchLanguage();
+    }
 
     //hlustar eftir takkanum, ef svo þá keyrir switchLanguage fallið
     const langBtn = document.getElementById("lang-switch");
