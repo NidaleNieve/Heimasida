@@ -19,13 +19,13 @@ body {
 section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 40px 20px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 
 }
-Section.visible {
+section.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -178,7 +178,7 @@ Section.visible {
     background: #ffffff;
     border-radius: 16px;
     padding: 36px 32px;
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease;
 }
 .about-card:hover {
@@ -193,12 +193,16 @@ Section.visible {
 
 /* --Projects-- */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .project-card {
+    flex: 1 1 350px;
+    max-width: 450px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -311,27 +315,12 @@ footer {
 }
 
 /* --Responsive-- */
-/* Responsive grid */
-@media screen and (min-width: 710px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* centera síðasta cardið ef það er oddatala */
-    .project-card:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
-        justify-self: center;
-        width: 100%;
-        max-width: 480px; 
-    }
-}
 /* lítil tablets og stórir símar */
 @media screen and (max-width: 600px) {
     .intro {
         min-height: 100vh;
         padding: 50px 20px 90px;
     }
-
     .intro h1 {
         font-size: 2rem;
     }
@@ -344,7 +333,6 @@ footer {
     .subtitle {
         font-size: 1rem;
     }
-
     .intro-text {
         font-size: 0.95rem;
     }
@@ -352,17 +340,13 @@ footer {
     .section-title {
         font-size: 1.5rem;
     }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
+    
+    .about-card {
+        padding: 26px 22px;
     }
 
     .project-card {
         padding: 18px 20px;
-    }
-
-    .about-card {
-        padding: 26px 22px;
     }
 
     .contact-btn {
