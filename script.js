@@ -6,7 +6,7 @@ const translations = {
         about_title: "About me",
         about: 'I have worked on various web projects, ranging from games written in JavaScript to full-stack web applications. I enjoy creating things that work well...',
         about_2: "I am always learning new things and looking for interesting projects.",
-        projects_title: "Projects",
+        projects_title: "Web Projects",
         hola: "Association of Spanish speakers in Iceland — Created a new website for Hola with Wordpress.",
         gastroswipe: "Easily find restaurants with friends! Full Stack web-app built with Supabase and Next.js. <br>Web Programming II — Final Project.",
         veff1_title: "Festivals in Iceland",
