@@ -110,7 +110,7 @@ section.visible {
 
 .profile-picture {
     display: inline-block;
-    border-radius: 10%;
+    border-radius: 20px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     margin-bottom: 28px;
     overflow: hidden;
@@ -123,7 +123,7 @@ section.visible {
     display: block;
     width: 170px;
     height: 190px;
-    border-radius: 10%;
+    border-radius: 13px; /* Innra border-radius er outer - padding */
     object-fit: cover;
     object-position: center calc(50% + 15px); /* Færi mynd niður */
     transform: translateZ(40px) scale(0.9);
@@ -218,7 +218,7 @@ section.visible {
     padding: 22px 24px;
     text-decoration: none;
     color: #1a1a1a;
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .project-card:hover {
