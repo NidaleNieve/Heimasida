@@ -4,7 +4,7 @@ const translations = {
         subtitle: "Database and Software Developer",
         intro: "I am a hardworking and diligent person with a strong interest in computers. I am very curious, responsible, solution-oriented, and work well independently.<br>Here you can find an overview of my projects and ways to get in touch.",
         about_title: "About me",
-        about: 'I have worked on various web projects, ranging from games written in JavaScript to full-stack web applications. I enjoy creating things that work well...',
+        about: 'I have worked on various web projects, ranging from games written in JavaScript to full-stack web applications. I enjoy creating things that work well.',
         about_2: "I am always learning new things and looking for interesting projects. Please contact me if you are interested in working together.",
         projects_title: "Web Projects",
         hola: "Association of Spanish speakers in Iceland — Created a new website for Hola with Wordpress.",
