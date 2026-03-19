@@ -225,24 +225,22 @@ section.visible {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-
-/* 2. Force the icon to take the full width to push the text/arrow down */
-.feat-card .project-icon {
-    flex: 0 0 100%;
-}
-
-.feat-card:hover {
+a.feat-card:hover {
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
 }
-.feat-card:active {
+a.feat-card:active {
     transform: scale(0.98) !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
-.feat-card:hover .project-arrow img{
+a.feat-card:hover .project-arrow img{
     transform: translateX(4px);
     opacity: 0.7;
     filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(1397%)
             hue-rotate(197deg) brightness(90%) contrast(92%);
+}
+/* Full width icon til þess að það fara fyrir ofan */
+.feat-card .project-icon {
+    flex: 0 0 100%;
 }
 
 /* --Projects-- */
