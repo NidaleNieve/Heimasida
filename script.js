@@ -8,7 +8,7 @@ const translations = {
         about_2: "I am always learning new things and looking for interesting projects. Please contact me if you are interested in working together.",
         feats_title: "Achievements",
         makeathon: "Led a team during the makeathon in the Canary Islands, coordinating teamwork, problem solving, and the development of a technical solution innan þröngs tímaramma.",
-        forritunarkeppni_title: "National Coding Competition for Upper Secondary Schools 2024, 2025",
+        forritunarkeppni_title: "National Coding Competition for Upper Secondary Schools",
         forritunarkeppni: "Competed in Iceland's national coding competition for upper secondary schools in 2024 and 2025, winning second place in 2024.",
         projects_title: "Web Projects",
         hola: "Association of Spanish speakers in Iceland — Created a new website for Hola with Wordpress.",

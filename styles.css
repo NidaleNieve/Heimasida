@@ -225,22 +225,30 @@ section.visible {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-a.feat-card:hover {
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
-}
-a.feat-card:active {
-    transform: scale(0.98) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-}
-a.feat-card:hover .project-arrow img{
-    transform: translateX(4px);
-    opacity: 0.7;
-    filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(1397%)
-            hue-rotate(197deg) brightness(90%) contrast(92%);
-}
-/* Full width icon til þess að það fara fyrir ofan */
+/* Full width icon til þess að það fari fyrir ofan */
 .feat-card .project-icon {
     flex: 0 0 100%;
+}
+/* færi örina upp í miðjuna á cardinu ef það er link */ 
+a.feat-card {
+    position: relative;
+    padding-right: 24px;
+}
+a.feat-card .project-arrow {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+a.feat-card .project-info {
+    padding-right: 40px;
+}
+
+.project-icon-forritunarkeppni img {
+    width: 52px !important; 
+    height: 52px !important;
+    object-fit:cover !important;
+    border-radius: 8px !important;
 }
 
 /* --Projects-- */
@@ -266,15 +274,15 @@ a.feat-card:hover .project-arrow img{
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-.project-card:hover {
+.project-card:hover, a.feat-card:hover {
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
 }
-.project-card:active {
+.project-card:active, a.feat-card:active {
     transform: scale(0.98) !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 /* ör hreyfist og breytir um lit við hover */
-.project-card:hover .project-arrow img{
+.project-card:hover .project-arrow img, a.feat-card:hover .project-arrow img{
     transform: translateX(4px);
     opacity: 0.7;
     filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(1397%)
