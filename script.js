@@ -106,6 +106,16 @@ document.addEventListener("DOMContentLoaded", () => {
             "max-glare": 0.1,
         });
 
+        //Feat cards
+        VanillaTilt.init(document.querySelectorAll(".feat-card"), {
+            scale: 1.015,
+            perspective: 1000,
+            max: 4,
+            speed: 3000,
+            glare: true,
+            "max-glare": 0.18,
+        });
+
         //Project cards
         VanillaTilt.init(document.querySelectorAll(".project-card"), {
             scale: 1.015,

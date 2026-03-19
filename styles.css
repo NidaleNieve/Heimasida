@@ -201,6 +201,50 @@ section.visible {
     line-height: 1.75;
 }
 
+/* --Feats-- */
+.feats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feat-card {
+    flex: 1 1 350px;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    text-decoration: none;
+    color: #1a1a1a;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* 2. Force the icon to take the full width to push the text/arrow down */
+.feat-card .project-icon {
+    flex: 0 0 100%;
+}
+
+.feat-card:hover {
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+}
+.feat-card:active {
+    transform: scale(0.98) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+.feat-card:hover .project-arrow img{
+    transform: translateX(4px);
+    opacity: 0.7;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(1397%)
+            hue-rotate(197deg) brightness(90%) contrast(92%);
+}
+
 /* --Projects-- */
 .projects-grid {
     display: flex;
@@ -230,6 +274,13 @@ section.visible {
 .project-card:active {
     transform: scale(0.98) !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+/* ör hreyfist og breytir um lit við hover */
+.project-card:hover .project-arrow img{
+    transform: translateX(4px);
+    opacity: 0.7;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(1397%)
+            hue-rotate(197deg) brightness(90%) contrast(92%);
 }
 
 .project-icon {
@@ -270,13 +321,6 @@ section.visible {
     opacity: 0.3;
     font-size: 0.9rem;
     transition: transform 0.3s ease, color 0.3s ease;
-}
-/* ör hreyfist og breytir um lit við hover */
-.project-card:hover .project-arrow img{
-    transform: translateX(4px);
-    opacity: 0.7;
-    filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(1397%)
-            hue-rotate(197deg) brightness(90%) contrast(92%);
 }
 
 /* --Contact-- */
