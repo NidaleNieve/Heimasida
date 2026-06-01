@@ -7,6 +7,8 @@ const translations = {
         about: 'I have worked on various projects, ranging from videogames and cybersecurity to robotics and full-stack web apps. I enjoy creating things that work well both from the ground up, as well as improving and refining existing functionality.',
         about_2: "I am always learning new things and looking for interesting projects. Feel free to reach out if you are interested in working together or have an exciting project I could help you with in this field.",
         feats_title: "Achievements",
+        nemendaraeda_title: "Student Address at Tækniskólinn's Graduation Ceremony",
+        nemendaraeda: "I was selected to give a student speech at Tækniskólinn's Spring 2026 graduation ceremony.",
         makeathon: "Led a team during the makeathon in the Canary Islands, coordinating teamwork, problem solving, and the development of a technical solution innan þröngs tímaramma.",
         forritunarkeppni_title: "National Coding Competition for Upper Secondary Schools",
         forritunarkeppni: "Competed in Iceland's national coding competition for upper secondary schools in 2024 and 2025, winning second place in 2024.",
