@@ -212,7 +212,7 @@ section.visible {
 
 .feat-card {
     flex: 1 1 350px;
-    max-width: 450px;
+    max-width: 350px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
