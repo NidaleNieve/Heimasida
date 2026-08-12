@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orðabókin Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    main {
+      max-width: 32rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+    }
+
+    p {
+      margin: 0 0 1.5rem;
+      color: GrayText;
+    }
+
+    .email-button {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      border-radius: 999px;
+      background: #087fc1;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .email-button:hover {
+      filter: brightness(1.08);
+    }
+
+    .email-button:focus-visible,
+    .email-address:focus-visible {
+      outline: 3px solid CanvasText;
+      outline-offset: 3px;
+    }
+
+    .email-button svg {
+      width: 1em;
+      height: 1em;
+      margin-right: 0.4em;
+      vertical-align: -0.12em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+
+    .email-address {
+      display: block;
+      margin: 1rem auto 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: LinkText;
+      font: inherit;
+      font-weight: 400;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .email-address:hover {
+      text-decoration-thickness: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Orðabókin Support</h1>
+    <p>Need help with Orðabókin? Contact support by email.</p>
+    <a class="email-button" href="mailto:support@danielsnaer.org?subject=Or%C3%B0ab%C3%B3kin%20Support">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <path d="m4 7 8 6 8-6"></path>
+      </svg>
+      Email support
+    </a>
+    <button class="email-address" id="copy-email" type="button">support@danielsnaer.org</button>
+  </main>
+  <script>
+    const copyButton = document.getElementById("copy-email");
+    const emailAddress = "support@danielsnaer.org";
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(emailAddress);
+        copyButton.textContent = "Copied!";
+        window.setTimeout(() => {
+          copyButton.textContent = emailAddress;
+        }, 1500);
+      } catch {
+        window.prompt("Copy this email address:", emailAddress);
+      }
+    });
+  </script>
+</body>
+</html>
